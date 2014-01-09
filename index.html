@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Guild Roster</title>
+
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="jquery.roster.css">
+	<style>
+		body {font-family: 'Ubuntu', sans-serif;}
+		h1 small {color: #bbb;}
+		code {border-left: 5px solid #aaa; padding: 10px; width: 650px; background: #f6f6f6; display: block;}
+
+		/* extra styles */
+		#roster.table table {width: 700px}
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<h1>
+			Guild Roster
+			<small>List your World of Warcraft guild data with jQuery</small>
+		</h1>
+
+	</header>
+
+	<section>
+
+		<h3>Demo</h3>
+
+		<!-- DEMO -->
+		<div class="roster-wrap"></div>
+		<!-- /DEMO -->
+	
+		<H3>How to use</H3>
+		<p>Include the script, stylesheet and jQuery then use the following options.</p>
+		<pre></pre><code>&lt;script src="<strong>//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js</strong>"&gt;&lt;/script&gt;
+&lt;script src="<strong>jquery.roster.min.js</strong>"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="<strong>jquery.roster.css</strong>"&gt;</code></pre>
+		<p>Select an element and set up the script.</p>
+		<pre><code>$('.class').roster();</code></pre>
+
+		<h3>Options</h3>
+		<pre><code>$('.class').roster({
+	realm: 'realm-name',
+	guild: 'guild-name',
+	locale: 'eu',
+	lang: 'en'
+});</code></pre>
+
+		<h3>Data API</h3>
+		<p>JSON file structure</p>
+		<pre><code>{
+	"lastModified":1323345657000,
+	"name":"microtroll",
+	"realm":"Arathor",
+	"level":25,
+	"side":0,
+	"achievementPoints":1415,
+	"members":[{
+		"character":{
+			"name":"Dementika",
+			"realm":"Arathor",
+			"class":3,
+			"race":4,
+			"gender":1,
+			"level":85,
+			"achievementPoints":0,
+			"thumbnail":"arathor/160/23619232-avatar.jpg"
+		},
+		"rank":8
+	}]
+}</code></pre>
+
+	</section>
+
+	<!-- Scripts --> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="jquery.roster.min.js"></script>
+	<script>
+		$(function() {
+			"use strict";
+
+			// Guild rostaer
+			$('.roster-wrap').roster({
+				realm: 'Arathor',
+				guild: 'microtroll'
+			});
+		});
+	</script>
+
+</body>
+</html>

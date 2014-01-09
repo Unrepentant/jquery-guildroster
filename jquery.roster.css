@@ -1,0 +1,43 @@
+#roster.table a { outline: none; text-decoration: none; }
+#roster.table a:hover { color:#fff !important; }
+#roster.table .align-left { text-align: left; }
+#roster.table .align-center { text-align: center; }
+#roster.table .align-right { text-align: right; }
+#roster.table em { color: #d2ae89; font-style: normal; }
+#roster.table table { width: 100%; table-layout: auto; border-collapse: collapse; 	border-spacing: 0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
+#roster.table thead th { padding: 0; background: #4d1a08 url("http://eu.battle.net/wow/static/images/content/table-header.gif") 0 100% repeat-x; border-bottom: 1px solid #1a0f08; white-space: nowrap; }
+#roster.table thead th, #roster.table thead th a { color: #f5ebd1; font-weight: bold; }
+#roster.table thead th.align-center .sort-tab,
+#roster.table thead th.align-center .sort-link { text-align: center; }
+#roster.table thead th.align-right .sort-tab,
+#roster.table thead th.align-right .sort-link { text-align: right; }
+#roster.table tfoot th { padding: 10px }
+#roster.table tbody td { padding: 10px; color: #f5ebd1; text-align: center; }
+#roster.table tbody .row1 td { background: #2b1507; border-top: 1px solid #31190a }
+#roster.table tbody .row2 td { background: #231207; border-top: 1px solid #30190b }
+#roster.table tbody tr:hover td,
+#roster.table tbody tr.row-active td { background: #180c04; color: #fff }
+#roster.table tbody tr.no-results td { padding: 25px 50px; text-align: center; background: #231207; color: #C09A67 }
+#roster.table tbody tr.disabled { opacity: 0.33333; }
+#roster.table .name { text-align: left; }
+#roster.table .sort-tab { display: block; padding: 8px 10px; text-align: left; border-left: 1px solid #7c2804; border-top: 1px solid #7c2804; border-right: 1px solid #391303 }
+#roster.table .sort-link:hover { color: #fff; background: #6a240b url("http://eu.battle.net/wow/static/images/content/table-header-hover.gif") 0 100% repeat-x; border-top-color: #af3900; border-left-color: #af3900 }
+#roster.table .sort-data.hidden { display: none; } /* table specificity for ie6 */
+#roster.table .sort-link,
+#roster.table .sort-tab { display: block; padding: 8px 10px; text-align: left; border-left: 1px solid #7c2804; border-top: 1px solid #7c2804; border-right: 1px solid #391303; }
+#roster.table .icon-frame { display: inline-block; overflow: hidden; padding: 1px; background-color: black;  background-position: 1px 1px; background-repeat: no-repeat; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #434445; border-bottom-color: #2f3032; border-top-color: #b1b2b4; vertical-align: middle; }
+#roster.table .icon-frame.frame-14 { height: 14px; width: 14px; }
+#roster.table .rank .guild-master { position: relative; }
+#roster.table .rank span .symbol { width: 18px; height: 18px; position: absolute; top: -2px; left: -22px; background: url("http://eu.battle.net/wow/static/images/icons/icon-guildmaster.gif") no-repeat 0 0; }
+#roster.table .ach-points .ach-icon { background: url("http://eu.battle.net/wow/static/images/icons/achievements.gif") no-repeat 100% 50%; display: inline-block; padding-right: 11px; text-align: right; }
+#roster.table .color-c1, #roster.table .color-c1 a { color: #c69b6d !important; } /* warrior */
+#roster.table .color-c2, #roster.table .color-c2 a { color: #f48cba !important; } /* paladin */
+#roster.table .color-c3, #roster.table .color-c3 a, .color-g2 { color: #aad372 !important; } /* hunter */
+#roster.table .color-c4, #roster.table .color-c4 a, .color-g1 { color: #fff468 !important; } /* rogue */
+#roster.table .color-c5, #roster.table .color-c5 a { color: #f0ebe0 !important; } /* priest */
+#roster.table .color-c6, #roster.table .color-c6 a { color: #c41e3b !important; } /* death knight */
+#roster.table .color-c7, #roster.table .color-c7 a { color: #2359ff !important; } /* shaman */
+#roster.table .color-c8, #roster.table .color-c8 a, .color-g3 { color: #68ccef !important; } /* mage */
+#roster.table .color-c9, #roster.table .color-c9 a { color: #9382c9 !important; } /* warlock */
+#roster.table .color-c10, #roster.table .color-c10 a { color: #00FFBA !important; } /* monk */
+#roster.table .color-c11, #roster.table .color-c11 a, #roster.table .color-g4 { color: #ff7c0a !important; } /* druid */
