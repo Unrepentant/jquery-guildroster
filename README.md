@@ -19,7 +19,7 @@ Select an element and set up the script.
 $('.class_name').roster();
 ```
 
-**Settings**
+**Options**
 
 ```javascript
 $('.class_name').roster({
